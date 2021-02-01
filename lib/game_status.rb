@@ -19,9 +19,8 @@ def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
     win_combination.each do |win_index|
       if position_taken?(board, win_index) && win_index == "X"
-        break
+        return win_combination
       end
     end
-    return win_combination
   end
 end
