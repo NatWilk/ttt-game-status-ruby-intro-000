@@ -22,6 +22,6 @@ def won?(board)
         break
       end
     end
-    win_combination
+    return win_combination
   end
 end
